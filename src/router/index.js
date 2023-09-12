@@ -11,7 +11,12 @@ const router = createRouter({
     {
       path: '/requests',
       name: 'requests',
-      component: () => import('../views/RequestsView.vue')
+      component: () => import('../views/RequestsView.vue'),
+    },
+    {
+      path: '/requests/add',
+      name: 'addRequest',
+      component: () => import('../views/AddRequestView.vue'),
     }
   ]
 })
